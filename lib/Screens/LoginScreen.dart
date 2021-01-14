@@ -29,24 +29,23 @@ class _LoginScreenState extends State<LoginScreen> {
             letterSpacing: 1.2,
           ),
         ),
-        onPressed: () => performLogin(),
+        onPressed: () {
+          print("Raza");
+          print("tring to perform login");
+          _repository.signIn().then((FirebaseUser user) {
+            print("something");
+            if (user != null) {
+              authenticateUser(user);
+            } else {
+              print("There was an error");
+            }
+          });
+        },
       ),
     );
   }
 
-   performLogin() {
-    print("tring to perform login");
-    _repository.signIn().then((FirebaseUser user) {
-      print("something");
-      if (user != null) {
-        authenticateUser(user);
-      } else {
-        print("There was an error");
-      }
-    });
-  }
-
-   authenticateUser(FirebaseUser user) {
+  authenticateUser(FirebaseUser user) {
     _repository.authenticateUser(user).then((isNewUser) {
       if (isNewUser) {
         _repository.addDataToDb(user).then((value) {
@@ -63,5 +62,4 @@ class _LoginScreenState extends State<LoginScreen> {
       }
     });
   }
-
 }
