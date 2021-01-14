@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "418122988628",
+    "project_id": "connect-a74cf",
+    "storage_bucket": "connect-a74cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418122988628:android:37274440697cf9a1e141c1",
+        "android_client_info": {
+          "package_name": "com.plutter.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418122988628-9lp6kvo1t1560ucn6k587is5ffsfsnlo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCXcGka5dfA6MEfZTJasnNdGFkj1FofS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418122988628-9lp6kvo1t1560ucn6k587is5ffsfsnlo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
