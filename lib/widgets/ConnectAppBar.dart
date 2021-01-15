@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:connect/screens/pageviews/chats/widgets/user_circle.dart';
 import 'package:connect/widgets/appbar.dart';
 
-class SkypeAppBar extends StatelessWidget implements PreferredSizeWidget {
+class ConnectAppBar extends StatelessWidget implements PreferredSizeWidget {
   final title;
   final List<Widget> actions;
 
-  const SkypeAppBar({
+  const ConnectAppBar({
     Key key,
     @required this.title,
     @required this.actions,

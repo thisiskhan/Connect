@@ -304,7 +304,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       ),
                       ModalTile(
                         title: "Schedule Call",
-                        subtitle: "Arrange a skype call and get reminders",
+                        subtitle: "Arrange a Connect call and get reminders",
                         icon: Icons.schedule,
                       ),
                       ModalTile(

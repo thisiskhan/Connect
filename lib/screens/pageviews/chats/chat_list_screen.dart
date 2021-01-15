@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:connect/widgets/ConnectAppBar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:connect/models/contact.dart';
@@ -9,7 +10,7 @@ import 'package:connect/screens/pageviews/chats/widgets/contact_view.dart';
 import 'package:connect/screens/pageviews/chats/widgets/quiet_box.dart';
 import 'package:connect/screens/pageviews/chats/widgets/user_circle.dart';
 import 'package:connect/utils/universal_variables.dart';
-import 'package:connect/widgets/skype_appbar.dart';
+
 
 import 'widgets/new_chat_button.dart';
 
@@ -19,7 +20,7 @@ class ChatListScreen extends StatelessWidget {
     return PickupLayout(
       scaffold: Scaffold(
         backgroundColor: UniversalVariables.blackColor,
-        appBar: SkypeAppBar(
+        appBar: ConnectAppBar(
           title: UserCircle(),
           actions: <Widget>[
             IconButton(

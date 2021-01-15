@@ -1,8 +1,9 @@
+import 'package:connect/widgets/ConnectAppBar.dart';
 import 'package:flutter/material.dart';
 import 'package:connect/screens/callscreens/pickup/pickup_layout.dart';
 import 'package:connect/screens/pageviews/logs/widgets/floating_column.dart';
 import 'package:connect/utils/universal_variables.dart';
-import 'package:connect/widgets/skype_appbar.dart';
+
 
 import 'widgets/log_list_container.dart';
 
@@ -12,7 +13,7 @@ class LogScreen extends StatelessWidget {
     return PickupLayout(
       scaffold: Scaffold(
         backgroundColor: UniversalVariables.blackColor,
-        appBar: SkypeAppBar(
+        appBar: ConnectAppBar(
           title: "Calls",
           actions: <Widget>[
             IconButton(

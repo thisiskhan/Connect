@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
         ChangeNotifierProvider(create: (_) => UserProvider()),
       ],
       child: MaterialApp(
-        title: "Skype Clone",
+        title: "Connect",
         debugShowCheckedModeBanner: false,
         initialRoute: '/',
         routes: {
