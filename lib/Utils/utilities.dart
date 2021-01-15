@@ -36,7 +36,7 @@ class Utils {
     Im.copyResize(image, width: 500, height: 500);
 
     return new File('$path/img_$rand.jpg')
-      ..writeAsBytesSync(Im.encodeJpg(image, quality: 85));
+      ..writeAsBytesSync(Im.encodeJpg(image, quality: 20));
   }
 
   static int stateToNum(UserState userState) {

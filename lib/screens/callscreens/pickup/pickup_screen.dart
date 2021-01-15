@@ -89,7 +89,7 @@ class _PickupScreenState extends State<PickupScreen> {
                     await callMethods.endCall(call: widget.call);
                   },
                 ),
-                SizedBox(width: 25),
+                SizedBox(width: 45),
                 IconButton(
                     icon: Icon(Icons.call),
                     color: Colors.green,
