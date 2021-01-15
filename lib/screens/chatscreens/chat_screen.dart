@@ -209,7 +209,7 @@ class _ChatScreenState extends State<ChatScreen> {
         : message.photoUrl != null
             ? CachedImage(
                 message.photoUrl,
-                height: 250,
+                height: 350,
                 width: 250,
                 radius: 10,
               )

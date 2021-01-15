@@ -10,6 +10,7 @@ import 'package:connect/screens/pageviews/chats/widgets/contact_view.dart';
 import 'package:connect/screens/pageviews/chats/widgets/quiet_box.dart';
 import 'package:connect/screens/pageviews/chats/widgets/user_circle.dart';
 import 'package:connect/utils/universal_variables.dart';
+import 'package:shimmer/shimmer.dart';
 
 
 import 'widgets/new_chat_button.dart';
@@ -21,7 +22,13 @@ class ChatListScreen extends StatelessWidget {
       scaffold: Scaffold(
         backgroundColor: UniversalVariables.blackColor,
         appBar: ConnectAppBar(
-          title: UserCircle(),
+           title: Shimmer.fromColors(
+        baseColor: UniversalVariables.blackColor,
+        highlightColor: Colors.white,
+        child: Text("Connect"),
+        period: Duration(seconds: 1),
+      ),
+          //title: UserCircle(),
           actions: <Widget>[
             IconButton(
               icon: Icon(
@@ -34,8 +41,9 @@ class ChatListScreen extends StatelessWidget {
             ),
             IconButton(
               icon: Icon(
-                Icons.more_vert,
+                Icons.store,
                 color: Colors.white,
+                size: 30,
               ),
               onPressed: () {},
             ),

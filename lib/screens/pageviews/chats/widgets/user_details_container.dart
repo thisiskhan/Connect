@@ -48,7 +48,8 @@ class UserDetailsContainer extends StatelessWidget {
               onPressed: () => Navigator.maybePop(context),
             ),
             centerTitle: true,
-            title: ShimmeringLogo(),
+            title: Text("Profile"),
+            //title: ShimmeringLogo(),
             actions: <Widget>[
               FlatButton(
                 onPressed: () => signOut(),
@@ -60,6 +61,107 @@ class UserDetailsContainer extends StatelessWidget {
             ],
           ),
           UserDetailsBody(),
+          Divider(),
+          GestureDetector(
+            onTap: () {
+              EditProfile();
+            },
+            child: Container(
+              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.edit,
+                    color: Colors.white,
+                  ),
+                  SizedBox(width: 35),
+                  Text(
+                    "Edit Profile",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                      color: Colors.white,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+          Divider(),
+          GestureDetector(
+            onTap: () {
+              EditProfile();
+            },
+            child: Container(
+              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.edit,
+                    color: Colors.white,
+                  ),
+                  SizedBox(width: 35),
+                  Text(
+                    "Edit Profile",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                      color: Colors.white,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+          Divider(),
+          GestureDetector(
+            onTap: () {
+              EditProfile();
+            },
+            child: Container(
+              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.settings,
+                    color: Colors.white,
+                  ),
+                  SizedBox(width: 35),
+                  Text(
+                    "Settings",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                      color: Colors.white,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+          Divider(),
+          GestureDetector(
+            onTap: () {
+              EditProfile();
+            },
+            child: Container(
+              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+              child: Row(
+                children: [
+                  SizedBox(width: 35),
+                  Text(
+                    "Switch To Bussiness Account",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                      color: Colors.blue,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+          Divider(),
         ],
       ),
     );
@@ -79,7 +181,7 @@ class UserDetailsBody extends StatelessWidget {
           CachedImage(
             user.profilePhoto,
             isRound: true,
-            radius: 50,
+            radius: 100,
           ),
           SizedBox(width: 15),
           Column(
@@ -99,6 +201,25 @@ class UserDetailsBody extends StatelessWidget {
                 style: TextStyle(fontSize: 14, color: Colors.white),
               ),
             ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class EditProfile extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final UserProvider userProvider = Provider.of<UserProvider>(context);
+    final User user = userProvider.getUser;
+    return Scaffold(
+      body: ListView(
+        children: [
+          CachedImage(
+            user.profilePhoto,
+            isRound: true,
+            radius: 100,
           ),
         ],
       ),
