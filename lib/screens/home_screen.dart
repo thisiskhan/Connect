@@ -121,7 +121,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
           ],
           controller: pageController,
           onPageChanged: onPageChanged,
-          physics: NeverScrollableScrollPhysics(),
+         // physics: NeverScrollableScrollPhysics(),
         ),
         bottomNavigationBar: Container(
           child: Padding(
