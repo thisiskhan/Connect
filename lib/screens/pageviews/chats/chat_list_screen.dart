@@ -8,7 +8,6 @@ import 'package:connect/resources/chat_methods.dart';
 import 'package:connect/screens/callscreens/pickup/pickup_layout.dart';
 import 'package:connect/screens/pageviews/chats/widgets/contact_view.dart';
 import 'package:connect/screens/pageviews/chats/widgets/quiet_box.dart';
-import 'package:connect/screens/pageviews/chats/widgets/user_circle.dart';
 import 'package:connect/utils/universal_variables.dart';
 import 'package:shimmer/shimmer.dart';
 

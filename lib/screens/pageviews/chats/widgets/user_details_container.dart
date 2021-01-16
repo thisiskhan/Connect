@@ -8,7 +8,6 @@ import 'package:connect/screens/chatscreens/widgets/cached_image.dart';
 import 'package:connect/screens/login_screen.dart';
 import 'package:connect/widgets/appbar.dart';
 
-import 'shimmering_logo.dart';
 
 class UserDetailsContainer extends StatelessWidget {
   final AuthMethods authMethods = AuthMethods();
@@ -176,7 +175,7 @@ class UserDetailsBody extends StatelessWidget {
 
     return Container(
       padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-      child: Row(
+      child: Column(
         children: [
           CachedImage(
             user.profilePhoto,
