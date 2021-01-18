@@ -29,6 +29,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   # For making request to firestore database
   cloud_firestore: ^0.12.9
+  
+  # For handling stroy
+  story: ^0.2.0
 
   # For handling permissions
   # permission_handler: ^4.1.0
