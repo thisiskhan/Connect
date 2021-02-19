@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "418122988628",
-    "project_id": "connect-a74cf",
-    "storage_bucket": "connect-a74cf.appspot.com"
+    "project_number": "51149970785",
+    "project_id": "connect-e19bf",
+    "storage_bucket": "connect-e19bf.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:418122988628:android:37274440697cf9a1e141c1",
+        "mobilesdk_app_id": "1:51149970785:android:64ac6cdeedea1b349c3920",
         "android_client_info": {
           "package_name": "com.plutter.connect"
         }
       },
       "oauth_client": [
         {
-          "client_id": "418122988628-9lp6kvo1t1560ucn6k587is5ffsfsnlo.apps.googleusercontent.com",
+          "client_id": "51149970785-n4c7ubgem3vml16irttdbgupdcdk09gi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.plutter.connect",
+            "certificate_hash": "2f96523f42a75d4715082a3f72899bc5a19d7867"
+          }
+        },
+        {
+          "client_id": "51149970785-ithrf76i1dkakmolg7rbo4v8mp6r1i9v.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDCXcGka5dfA6MEfZTJasnNdGFkj1FofS0"
+          "current_key": "AIzaSyBqltkQwkWxPN6Xv8DCl85JmkVN9ab7Z5Y"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "418122988628-9lp6kvo1t1560ucn6k587is5ffsfsnlo.apps.googleusercontent.com",
+              "client_id": "51149970785-ithrf76i1dkakmolg7rbo4v8mp6r1i9v.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
